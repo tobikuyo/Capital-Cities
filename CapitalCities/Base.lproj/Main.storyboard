@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="pk4-Vc-dQH">
             <objects>
-                <viewController id="dcs-Qv-GvC" sceneMemberID="viewController">
+                <viewController id="dcs-Qv-GvC" customClass="MapViewController" customModule="CapitalCities" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fKa-et-gr7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,9 @@
                         <viewLayoutGuide key="safeArea" id="SJq-2u-i7a"/>
                     </view>
                     <navigationItem key="navigationItem" id="dLD-Oe-heu"/>
+                    <connections>
+                        <outlet property="mapView" destination="Rhn-SS-54A" id="Cf9-3U-uST"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bp8-jU-MHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
