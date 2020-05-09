@@ -23,12 +23,7 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        mapView.addAnnotation(capitalController.london)
-        mapView.addAnnotation(capitalController.oslo)
-        mapView.addAnnotation(capitalController.paris)
-        mapView.addAnnotation(capitalController.rome)
-        mapView.addAnnotation(capitalController.washington)
+        addAnnotations()
 
         mapView.delegate = self
     }
@@ -44,6 +39,14 @@ class MapViewController: UIViewController {
     }
 
     // MARK: - Methods
+
+    private func addAnnotations() {
+        mapView.addAnnotation(capitalController.london)
+        mapView.addAnnotation(capitalController.oslo)
+        mapView.addAnnotation(capitalController.paris)
+        mapView.addAnnotation(capitalController.rome)
+        mapView.addAnnotation(capitalController.washington)
+    }
 
 }
 
@@ -65,5 +68,16 @@ extension MapViewController: MKMapViewDelegate {
         }
 
         return annotationView
+    }
+
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let capital = view.annotation as? Capital else { return }
+
+        let placeName = capital.title
+        let placeInfo = capital.info
+
+        let alert = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
