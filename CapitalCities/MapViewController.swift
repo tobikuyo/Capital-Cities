@@ -17,12 +17,18 @@ class MapViewController: UIViewController {
 
     // MARK: - Properties
 
+    let capitalController = CapitalController()
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        mapView.addAnnotation(capitalController.london)
+        mapView.addAnnotation(capitalController.oslo)
+        mapView.addAnnotation(capitalController.paris)
+        mapView.addAnnotation(capitalController.rome)
+        mapView.addAnnotation(capitalController.washington)
     }
 
     // MARK: - Methods
