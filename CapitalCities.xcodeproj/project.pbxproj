@@ -14,6 +14,7 @@
 		2C5D959424672D210008D230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5D959224672D210008D230 /* LaunchScreen.storyboard */; };
 		2C5D95A32467375F0008D230 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D95A22467375F0008D230 /* MapViewController.swift */; };
 		2C5D95A5246738450008D230 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D95A4246738450008D230 /* Capital.swift */; };
+		2C5D95A7246739010008D230 /* CapitalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D95A6246739010008D230 /* CapitalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C5D959524672D210008D230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C5D95A22467375F0008D230 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2C5D95A4246738450008D230 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		2C5D95A6246739010008D230 /* CapitalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		2C5D959E246731750008D230 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C5D95A6246739010008D230 /* CapitalController.swift */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5D95A7246739010008D230 /* CapitalController.swift in Sources */,
 				2C5D958824672D1F0008D230 /* AppDelegate.swift in Sources */,
 				2C5D95A32467375F0008D230 /* MapViewController.swift in Sources */,
 				2C5D95A5246738450008D230 /* Capital.swift in Sources */,
